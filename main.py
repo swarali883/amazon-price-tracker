@@ -10,7 +10,7 @@ if price_as_float < BUY_PRICE:
 
     with smtplib.SMTP(YOUR_SMTP_ADDRESS, port=587) as connection:
         connection.starttls()
-        result = connection.login(YOUR_EMAIL, YOUR_PASSWORD)
+        result = connection.login('email', 'passsword')
         connection.sendmail(
             from_addr=YOUR_EMAIL,
             to_addrs=YOUR_EMAIL,
